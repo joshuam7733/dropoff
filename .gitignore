@@ -1,0 +1,33 @@
+# secrets and generated config
+.env
+.env.*
+!.env.example
+prototype/config.js
+prototype/_local/
+
+# local dev backend
+devserver/node_modules/
+devserver/.data/
+devserver/.server.*
+
+# toolchains and build output
+tools/
+android/toolchain/
+android/build/
+android/out/*.idx
+android/out/*.apk
+
+# investor materials stay private
+docs/Drop Off - *.pdf
+docs/investment-proposal.html
+*.keystore
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+*.log
+supabase/.temp/
+supabase/.branches/

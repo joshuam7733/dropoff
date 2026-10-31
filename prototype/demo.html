@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drop Off · Live demo wall</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Onest:wght@400;500;600;700&display=swap">
+<style>
+  :root { --ink: #0D2B23; --mari: #FFB71B; --mist: #F3F5F4; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #E9EDE8; font-family: 'Onest', system-ui, sans-serif; color: var(--ink); }
+  header { background: var(--ink); color: #fff; padding: 14px 20px; display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; }
+  header b { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 20px; }
+  header p { margin: 0; color: #C9D6D1; font-size: 13px; flex: 1 1 360px; }
+  header a { color: var(--mari); font-weight: 600; font-size: 14px; }
+  main { padding: 18px; display: flex; flex-direction: column; gap: 18px; max-width: 1700px; margin: 0 auto; }
+  .row { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; }
+  .dev { display: flex; flex-direction: column; gap: 8px; }
+  .dev h2 { margin: 0; font-size: 14px; font-weight: 700; display: flex; justify-content: space-between; gap: 10px; }
+  .dev h2 span { font-weight: 500; color: #5F6C67; }
+  .phone { width: 390px; height: 800px; border: 8px solid #0B1A15; border-radius: 44px; overflow: hidden; background: #fff; box-shadow: 0 20px 50px rgba(13,43,35,.2); }
+  .phone iframe, .wide iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .wide { width: 100%; height: 900px; border-radius: 18px; overflow: hidden; box-shadow: 0 20px 50px rgba(13,43,35,.15); background: #fff; }
+  @media (max-width: 860px) { .phone { width: 100%; max-width: 390px; } }
+</style>
+</head>
+<body>
+<header><b>Drop Off · live demo wall</b>
+  <p>Four separate sessions on one screen, all on the same database. Sign each one in with a different account (local demo password <code>DropOff#2026</code>): <b style="font-size:13px">rose@dropoff.test</b> (vendor), <b style="font-size:13px">moses@dropoff.test</b> (boda rider), <b style="font-size:13px">ops@dropoff.test</b> (operations). The recipient frame needs no account: open a tracking link from the vendor's delivery.</p>
+  <a href="index.html">Website</a></header>
+<main>
+  <div class="row">
+    <div class="dev"><h2>Vendor app <span>app.html · session "vendor"</span></h2><div class="phone"><iframe title="Vendor app" src="app.html?slot=vendor#vendor"></iframe></div></div>
+    <div class="dev"><h2>Rider app <span>app.html · session "rider"</span></h2><div class="phone"><iframe title="Rider app" src="app.html?slot=rider#rider"></iframe></div></div>
+    <div class="dev"><h2>Recipient <span>track.html · no account</span></h2><div class="phone"><iframe id="rec" title="Recipient tracking page" src="track.html?slot=recipient"></iframe></div></div>
+  </div>
+  <div class="dev"><h2>Operations console <span>app.html · session "ops"</span></h2><div class="wide"><iframe title="Operations console" src="app.html?slot=ops#ops"></iframe></div></div>
+</main>
+</body>
+</html>
