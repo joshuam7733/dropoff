@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0D2B23">
+<title>Drop Off Business</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" media="print" onload="this.media='all'">
+</head>
+<body class="app-page">
+<div id="splash" aria-hidden="true"><div class="sp-stage">
+<svg class="sp-art" viewBox="0 0 220 150"><defs><radialGradient id="spGlow"><stop offset="0" stop-color="#FFB71B" stop-opacity=".28"/><stop offset="1" stop-color="#FFB71B" stop-opacity="0"/></radialGradient></defs>
+<circle class="sp-glow" cx="110" cy="58" r="70" fill="url(#spGlow)"/>
+<path class="sp-route" d="M14 136 C 54 136, 52 100, 84 98 S 112 86, 110 74" fill="none" stroke="#FFB71B" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="2 7"/>
+<circle class="sp-start" cx="14" cy="136" r="5" fill="#fff"/>
+<circle class="sp-dot" r="5.5" fill="#fff"><animateMotion dur="0.75s" begin="0.12s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".5 0 .3 1" path="M14 136 C 54 136, 52 100, 84 98 S 112 86, 110 74"/></circle>
+<circle class="sp-ring r1" cx="110" cy="58" r="26" fill="none" stroke="#FFB71B" stroke-width="2"/><circle class="sp-ring r2" cx="110" cy="58" r="26" fill="none" stroke="#FFB71B" stroke-width="2"/>
+<g class="sp-logo"><svg x="86" y="34" width="48" height="48" viewBox="0 0 32 32" overflow="visible"><rect class="sp-tile" width="32" height="32" rx="9" fill="#FFB71B"/><g class="sp-pin"><path d="M16 5.5c-4.3 0-7.8 3.3-7.8 7.6 0 5.5 7.8 12.4 7.8 12.4s7.8-6.9 7.8-12.4c0-4.3-3.5-7.6-7.8-7.6z" fill="#0D2B23"/><path class="sp-check" d="M12.6 11.6 16 15l3.4-3.4" fill="none" stroke="#FFB71B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></svg></g>
+</svg>
+<div class="sp-word"><span style="--i:0">D</span><span style="--i:1">r</span><span style="--i:2">o</span><span style="--i:3">p</span><span style="--i:4">&nbsp;</span><span style="--i:5">O</span><span style="--i:6">f</span><span style="--i:7">f</span></div>
+<div class="sp-tag">Deliveries, handled.</div></div></div>
+<div id="app"></div>
+<script>window.DO_APP_MODE = 'vendor'; window.DO_PAGE = 'app';</script>
+<script src="config.js"></script>
+<script src="local/boot.js"></script>
+<script type="module" src="local/backend.mjs"></script>
+<script src="lib/preact.umd.js"></script>
+<script>if (!window.preact) document.write('<script src="https://cdn.jsdelivr.net/npm/preact@10.24.3/dist/preact.umd.js"><\/script>');</script>
+<script src="lib/htm.umd.js"></script>
+<script>if (!window.htm) document.write('<script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.umd.js"><\/script>');</script>
+<script src="lib/supabase.js"></script>
+<script>if (!window.supabase) document.write('<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"><\/script>');</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/pay.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/vendor.js"></script>
+<script src="js/rider.js"></script>
+<script src="js/recipient.js"></script>
+<script src="js/ops.js"></script>
+<script src="js/site.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
